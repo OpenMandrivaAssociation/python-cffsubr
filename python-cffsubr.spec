@@ -39,5 +39,7 @@ export XFLAGS="%{optflags}"
 %files
 %license LICENSE
 %doc README.md
-#{python_sitelib}/%{pypi_name}/
-#{python_sitelib}/%{pypi_name}-%{version}-py%{python3_version}.egg-info
+%{_bindir}/cffsubr
+%{python_sitearch}/cffsubr-%{version}-py*.*.egg-info/PKG-INFO
+%{python_sitearch}/cffsubr-%{version}-py*.*.egg-info/
+%{python_sitearch}/cffsubr/
