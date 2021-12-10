@@ -14,6 +14,8 @@ BuildRequires:  python3dist(fonttools) >= 4.10.2
 BuildRequires:  python3dist(setuptools)
 #BuildRequires:  python3dist(setuptools-git-ls-files)
 BuildRequires:  python3dist(setuptools-scm)
+BuildRequires:  python3dist(wheel)
+BuildRequires:  python3dist(pip)
 
 %{?python_provide:%python_provide python3-%{pypi_name}}
 #Requires:       python3dist(afdko)
