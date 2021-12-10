@@ -39,5 +39,5 @@ export XFLAGS="%{optflags}"
 %files
 %license LICENSE
 %doc README.md
-%{python_sitelib}/%{pypi_name}/
-%{python_sitelib}/%{pypi_name}-%{version}-py%{python3_version}.egg-info
+#{python_sitelib}/%{pypi_name}/
+#{python_sitelib}/%{pypi_name}-%{version}-py%{python3_version}.egg-info
