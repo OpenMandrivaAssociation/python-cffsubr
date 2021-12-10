@@ -8,7 +8,7 @@ Group:          Development/Python
 License:        Apache 2.0
 URL:            https://github.com/adobe-type-tools/cffsubr
 Source0:        http://pypi.python.org/packages/source/c/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
-BuildArch:      noarch
+
 BuildRequires:  pkgconfig(python)
 BuildRequires:  python3dist(fonttools) >= 4.10.2
 BuildRequires:  python3dist(setuptools)
