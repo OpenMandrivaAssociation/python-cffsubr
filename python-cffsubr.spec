@@ -2,7 +2,7 @@
 
 Name:           python-%{pypi_name}
 Version:        0.2.9.post1
-Release:        1
+Release:        2
 Summary:        Standalone CFF subroutinizer based on the AFDKO tx tool
 Group:          Development/Python
 License:        Apache 2.0
