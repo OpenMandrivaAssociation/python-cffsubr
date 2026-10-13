@@ -2,7 +2,7 @@
 
 Name:		python-cffsubr
 Version:	0.4.0
-Release:	1
+Release:	2
 Summary:	Standalone CFF subroutinizer based on the AFDKO tx tool
 Group:		Development/Python
 License:	Apache-2.0
@@ -11,13 +11,16 @@ Source0:	https://files.pythonhosted.org/packages/source/c/%{module}/%{module}-%{
 BuildSystem:	python
 BuildArch:	noarch
 BuildRequires:	afdko >= 4.0.3
-BuildRequires:	pkgconfig(python)
+BuildRequires:	pkgconfig(python3)
 BuildRequires:	python%{pyver}dist(fonttools) >= 4.10.2
 BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	python%{pyver}dist(setuptools)
 BuildRequires:	python%{pyver}dist(setuptools-scm)
 BuildRequires:	python%{pyver}dist(wheel)
 Requires:	afdko >= 4.0.3
+
+%build -p
+export SETUPTOOLS_SCM_PRETEND_VERSION="%{version}"
 
 %description
 Standalone CFF subroutinizer based on the AFDKO tx tool.
